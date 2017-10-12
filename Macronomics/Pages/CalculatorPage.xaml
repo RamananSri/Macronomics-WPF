@@ -8,7 +8,17 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="CalculatorPage">
 
-    <Grid>
-        
-    </Grid>
+    <StackPanel VerticalAlignment="Bottom" Margin="20">
+        <StackPanel Orientation="Horizontal">
+           
+        </StackPanel>
+        <TextBox Text="Højde" Margin="30,0,30,10"></TextBox>
+        <TextBox Text="Vægt" Margin="30,0,30,10"></TextBox>
+        <TextBox Text="Alder" Margin="30,0,30,10"></TextBox>
+        <RadioButton GroupName="Gender" Content="Mand" Margin="30,0,30,10" />
+        <RadioButton GroupName="Gender" Content="Kvinde" Margin="30,0,30,10"/>
+        <Label Content="Aktivitet" HorizontalAlignment="Center" ></Label>
+        <Slider Maximum="100" TickPlacement="BottomRight" TickFrequency="10" IsSnapToTickEnabled="True" Width="200" ValueChanged="ActivitySliderChanged"/>
+        <Button Content="Calculate" Click="CalculateBtnClicked" Margin="70,20,70,0"></Button>
+    </StackPanel>
 </Page>

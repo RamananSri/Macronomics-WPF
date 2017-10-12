@@ -8,9 +8,10 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="LoginPage">
 
-    <StackPanel VerticalAlignment="Center">
-        <TextBox x:Name="UsernameTxt" Text="Brugernavn" TextAlignment="Center" Width="200"/>
-        <PasswordBox x:Name="PasswordTxt" Width="200"/>
-        <Button Content="Login" Click="LoginBtnClicked"/>
+    <StackPanel VerticalAlignment="Bottom">
+        <Image Source="https://image.freepik.com/free-icon/apple-logo_318-40184.jpg" Height="100" Margin="0,0,0,20"></Image>
+        <TextBox x:Name="UsernameTxt" Text="Brugernavn" TextAlignment="Center" Width="200" Margin="10"/>
+        <PasswordBox x:Name="PasswordTxt" Width="200" />
+        <Button Content="Login" Click="LoginBtnClicked" Width="100" Margin="0,30,0,50"/>
     </StackPanel>
 </Page>

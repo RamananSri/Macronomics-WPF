@@ -24,5 +24,15 @@ namespace Macronomics
         {
             InitializeComponent();
         }
+
+        private void ActivitySliderChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+        }
+
+        private void CalculateBtnClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

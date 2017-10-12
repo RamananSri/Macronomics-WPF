@@ -35,9 +35,9 @@ namespace Macronomics
             }
         }
 
-        private void Login(string username, string password{
+        private void Login(string username, string password){
 
-
+            _window.Content = new WeightPage(_window);
         }
     }
 }
