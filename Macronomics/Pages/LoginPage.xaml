@@ -8,7 +8,9 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="LoginPage">
 
-    <StackPanel>
-        <Button Content="hej"></Button>
+    <StackPanel VerticalAlignment="Center">
+        <TextBox x:Name="UsernameTxt" Text="Brugernavn" TextAlignment="Center" Width="200"/>
+        <PasswordBox x:Name="PasswordTxt" Width="200"/>
+        <Button Content="Login" Click="LoginBtnClicked"/>
     </StackPanel>
 </Page>

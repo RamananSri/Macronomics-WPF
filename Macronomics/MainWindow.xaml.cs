@@ -10,19 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Macronomics
 {
     /// <summary>
-    /// Interaction logic for LoginPage.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class LoginPage : Page
+    public partial class MainWindow : Window
     {
-        public LoginPage()
+        public MainWindow()
         {
             InitializeComponent();
+            this.Content = new LoginPage(this);
         }
     }
 }
