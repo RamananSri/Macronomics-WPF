@@ -5,10 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Macronomics"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="400" d:DesignWidth="700"
       Title="WeightPage">
 
-    <Grid>
-        
-    </Grid>
+    <StackPanel VerticalAlignment="Bottom" Margin="20">
+        <TextBox Name="weightTxt" Text="Vægt" TextAlignment="Center" Margin="0,0,0,20"></TextBox>
+        <Button Name="logWeightBtn" Click="logWeightBtnClicked" Content="Gem"></Button>
+        <StackPanel Orientation="Horizontal" Background="CornflowerBlue"  HorizontalAlignment="Center">
+            <Viewbox>
+                <Button Content="Weight"></Button>
+            </Viewbox>
+            <Viewbox>
+                <Button Content="Calculator"/>
+            </Viewbox>
+          
+           
+        </StackPanel>
+    </StackPanel>
 </Page>

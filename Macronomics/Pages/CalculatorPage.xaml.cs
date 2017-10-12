@@ -34,5 +34,10 @@ namespace Macronomics
         {
 
         }
+
+        private void CalculateBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

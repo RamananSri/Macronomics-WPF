@@ -12,5 +12,10 @@ namespace Macronomics
             _window = mainWindow;
             InitializeComponent();
         }
+
+        private void logWeightBtnClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

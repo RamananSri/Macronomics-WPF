@@ -5,13 +5,37 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Macronomics"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="400" d:DesignWidth="700"
       Title="LoginPage">
 
-    <StackPanel VerticalAlignment="Bottom">
-        <Image Source="https://image.freepik.com/free-icon/apple-logo_318-40184.jpg" Height="100" Margin="0,0,0,20"></Image>
-        <TextBox x:Name="UsernameTxt" Text="Brugernavn" TextAlignment="Center" Width="200" Margin="10"/>
-        <PasswordBox x:Name="PasswordTxt" Width="200" />
-        <Button Content="Login" Click="LoginBtnClicked" Width="100" Margin="0,30,0,50"/>
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="Black" Grid.RowSpan="8" HorizontalAlignment="Stretch">
+            <Label Content="Macronomics" Foreground="White" HorizontalAlignment="Center" FontSize="16" FontStyle="Italic"></Label>
+            <Button Content="Opret" Background="Black" Foreground="White" Margin="20,330,20,0"></Button>
+        </StackPanel>
+
+        <StackPanel Background="White" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="7">
+            <TextBox x:Name="UsernameTxt" Text="Brugernavn" TextAlignment="Center" Margin="100,140,100,10"/>
+            <PasswordBox x:Name="PasswordTxt" Margin="100,0,100,10"/>
+            <Button Content="Login" Click="LoginBtnClicked" Margin="150,10,150,0" Background="Gray" Foreground="White"/>
+        </StackPanel>
+
+    </Grid>
 </Page>
