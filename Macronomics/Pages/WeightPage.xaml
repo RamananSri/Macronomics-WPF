@@ -8,7 +8,36 @@
       d:DesignHeight="400" d:DesignWidth="700"
       Title="WeightPage">
 
-    <StackPanel VerticalAlignment="Bottom" Margin="20">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="Black" Grid.RowSpan="8" HorizontalAlignment="Stretch">
+            <Label Content="Vægt regnskab" Foreground="White" HorizontalAlignment="Center" FontSize="16" FontStyle="Italic"></Label>
+            <TextBox Background="White" Margin="20,140,20,"></TextBox>
+            <Button Content="Opret" Background="Black" Foreground="White" Margin="20,0,20,0"></Button>
+        </StackPanel>
+
+        <ListView Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="5"  ></ListView>
+        
+        
+    </Grid>
+
+    <!--<StackPanel VerticalAlignment="Bottom" Margin="20">
         <TextBox Name="weightTxt" Text="Vægt" TextAlignment="Center" Margin="0,0,0,20"></TextBox>
         <Button Name="logWeightBtn" Click="logWeightBtnClicked" Content="Gem"></Button>
         <StackPanel Orientation="Horizontal" Background="CornflowerBlue"  HorizontalAlignment="Center">
@@ -18,8 +47,6 @@
             <Viewbox>
                 <Button Content="Calculator"/>
             </Viewbox>
-          
-           
         </StackPanel>
-    </StackPanel>
+    </StackPanel>-->
 </Page>
